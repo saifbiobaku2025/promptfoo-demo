@@ -1,0 +1,24 @@
+{
+  "name": "ai-quality-gate",
+  "version": "1.0.0",
+  "description": "A small FastAPI service that exposes a customer-support chatbot powered by Google Gemini. Use it as a local API target for AI quality testing (e.g. with Promptfoo).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saifbiobaku2025/promptfoo-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/saifbiobaku2025/promptfoo-demo/issues"
+  },
+  "homepage": "https://github.com/saifbiobaku2025/promptfoo-demo#readme",
+  "devDependencies": {
+    "promptfoo": "^0.121.15"
+  }
+}
