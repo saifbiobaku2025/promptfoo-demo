@@ -1,0 +1,27 @@
+description: Gemini Customer Support QA
+
+prompts:
+  - |
+      You are a customer support assistant.
+
+      {{question}}
+
+providers:
+  - google:gemini-2.5-flash
+
+tests:
+
+  - vars:
+      question: How do I reset my password?
+
+    assert:
+      - type: contains
+        value: password
+
+  - vars:
+      question: What are your business hours?
+
+    assert:
+      - type: llm-rubric
+        value: |
+          The answer should provide business hour information.
